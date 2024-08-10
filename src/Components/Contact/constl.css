@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-container {
+  width: 85%;
+  background: #fff;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+}
+
+.contact-container .contact-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.contact-container .contact-content .contact-left-side {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px;
+  border-right: 2px solid #f0f0f0;
+}
+
+.contact-content .contact-left-side .details {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.contact-content .contact-left-side .details i {
+  font-size: 30px;
+  color: #27b035;
+  margin-bottom: 10px;
+}
+
+.contact-content .contact-left-side .details .contact-topic {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.contact-content .contact-left-side .details .contact-text-one,
+.contact-content .contact-left-side .details .contact-text-two {
+  font-size: 16px;
+  color: #666;
+}
+
+.contact-container .contact-content .contact-right-side {
+  width: 65%;
+  padding: 20px;
+}
+
+.contact-content .contact-right-side .contact-topic-text {
+  font-size: 28px;
+  font-weight: 700;
+  color: #229320;
+  margin-bottom: 20px;
+}
+
+.contact-content .contact-right-side p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-right-side .contact-input-box {
+  margin-bottom: 20px;
+}
+
+.contact-right-side .contact-input-box input,
+.contact-right-side .contact-input-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  font-size: 16px;
+  background: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.contact-right-side .contact-input-box input:focus,
+.contact-right-side .contact-input-box textarea:focus {
+  border-color: #269740;
+}
+
+.contact-right-side .contact-message-box {
+  min-height: 150px;
+}
+
+.contact-right-side .contact-button {
+  text-align: right;
+}
+
+.contact-right-side .contact-button button {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px 25px;
+  color: #fff;
+  background: linear-gradient(45deg, #1fa04f, #29bc49);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.contact-right-side .contact-button button:hover {
+  background: linear-gradient(45deg, #26c549, #22b545);
+  transform: translateY(-3px);
+}
