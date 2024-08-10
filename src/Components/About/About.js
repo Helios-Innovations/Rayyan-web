@@ -2,10 +2,12 @@ import React from 'react';
 import companyImage from '../image/ryyanposter.jpg'
 import { FaCloud, FaSearch, FaBitcoin, FaPaperPlane, FaPhone, FaPhoneAlt, FaAddressCard, FaPager } from 'react-icons/fa';
 import './abt.css';
+import Pcard from './Pcard';
 
 const AboutUs = () => {
   return (
     <>
+     <Pcard/>
     <div className='about-section'>
       <div className="about-left">
         <img src={companyImage}  alt="Company Image"/>

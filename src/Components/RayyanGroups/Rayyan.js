@@ -46,7 +46,7 @@ function RG() {
        
         <div className="teams">
            <img src={show} alt="" height="100px"/>
-            <div className="name">Other Products</div>
+            <div className="name">Rayyan Interprises</div>
             <button className='bs-btn'><Link to="/HomeOther">Explore</Link></button>
             <div className="social-links">
                     <a href="#"><FaFacebook /></a>

@@ -8,10 +8,10 @@ function HomeReal() {
   return (
     <div>
           <SliderReal/>
-          <Agent/>
+          {/* <Agent/> */}
           <Contact/>
     </div>
   )
 }
 
-export default HomeReal
+export default HomeReal;
