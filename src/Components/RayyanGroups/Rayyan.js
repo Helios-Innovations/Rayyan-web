@@ -9,6 +9,7 @@ import rick from '../image/Vehicles/Erickshaw2.jpg'
 import show from '../image/TwoShowroon.jpg'
 import SliderHome from '../Landing/SliderHome';
 import AboutUs from '../About/About';
+import Contact from '../Contact/Contact';
 
 
 function RG() {
@@ -71,6 +72,7 @@ function RG() {
     </div>
 </div>
              <AboutUs/>
+             <Contact/>
 </>
   )
 }
