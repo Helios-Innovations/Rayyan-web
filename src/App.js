@@ -38,14 +38,14 @@ function App() {
        <Route path="/contact" element={<Contact/>}/>
        <Route path="/product" element={<Product/>}/>
        <Route path="/login" element={<SignIn/>}/>
-       <Route path="/booking/Two1" element = {<Two1/>}/>
-       <Route path="/booking/Two2" element = {<Two2/>}/>
-       <Route path="/booking/Two3" element = {<Two3/>}/>
-       <Route path="/booking/Two4" element = {<Two4/>}/>
-       <Route path="/booking/Three1" element = {<Three1/>}/>
-       <Route path="/booking/Three2" element = {<Three2/>}/>
-       <Route path="/booking/Three3" element = {<Three3/>}/>
-       <Route path="/booking/Three4" element = {<Three4/>}/>
+       <Route path="/Two1" element = {<Two1/>}/>
+       <Route path="/Two2" element = {<Two2/>}/>
+       <Route path="/Two3" element = {<Two3/>}/>
+       <Route path="/Two4" element = {<Two4/>}/>
+       <Route path="/Three1" element = {<Three1/>}/>
+       <Route path="/Three2" element = {<Three2/>}/>
+       <Route path="/Three3" element = {<Three3/>}/>
+       <Route path="/Three4" element = {<Three4/>}/>
 
 
     </Routes>

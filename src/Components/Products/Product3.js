@@ -37,7 +37,7 @@ const products = [
 function Product3() {
 
   const handleBook = (productName) => {
-  window.location.href = `/booking/${productName}`;
+  window.location.href = `/${productName}`;
         };
 
   return (
