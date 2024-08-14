@@ -7,7 +7,6 @@ import Pcard from './Pcard';
 const AboutUs = () => {
   return (
     <>
-     <Pcard/>
     <div className='about-section'>
       <div className="about-left">
         <img src={companyImage}  alt="Company Image"/>

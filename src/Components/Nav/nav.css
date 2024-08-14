@@ -10,10 +10,12 @@ header {
   width: 100%;
   max-width: 100%;
   padding-left: 100px;
+  padding-right: 20px; /* Added right padding */
   height: 70px; /* Increased height */
   display: flex;
+  justify-content: flex-end; /* Align items to the right */
   align-items: center;
-  background: rgb(37, 103, 37,0.4); /* Transparent background */
+  background: rgba(37, 103, 37, 0.4); /* Transparent background */
   position: fixed; /* Fixed position */
   top: 0; /* Stick to the top */
   z-index: 1000;
@@ -22,11 +24,13 @@ header {
 header nav {
   display: flex;
   align-items: center;
+  justify-content: flex-end; /* Ensure nav items align to the right */
 }
 
 header nav ul {
   list-style-type: none;
   display: flex;
+  justify-content: flex-end; /* Align items to the right */
 }
 
 header nav li {
@@ -47,6 +51,75 @@ header nav a {
 }
 
 header nav a:hover {
-  background: #035f28cb;
+  background: #1f5234cb;
   border-radius: 2px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between; /* For mobile, keep space for menu icon */
+  }
+
+  header nav {
+    position: relative;
+    width: 100%;
+  }
+
+  /* Hide the nav items initially */
+  header nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #1f5234c1;
+    position: absolute;
+    top: 70px;
+    left: 0;
+  }
+
+  /* Show the nav items when the menu icon is clicked */
+  header nav ul.active {
+    display: flex;
+  }
+
+  header nav li {
+    margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  header nav a {
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* Menu Icon */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .menu-icon div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+}
+
+/* Change the menu icon to a close icon when active */
+.menu-icon.active div:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active div:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
