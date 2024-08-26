@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState , useEffect} from 'react'
+import {useState } from 'react'
 import logo from '../image/ryyanposter.jpg'
 import './constl.css'
 
@@ -25,6 +25,7 @@ function Contact() {
 
   return (
     <div className="contact-container">
+          <h1 className='contact-header'>Contact us</h1>
       <div className="contact-content">
         <div className="contact-left-side">
         <span>

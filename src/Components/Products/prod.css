@@ -1,21 +1,23 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
+  margin: auto;
+  overflow-x: hidden; /* Prevent horizontal overflow on mobile */
 }
 
 .app-alpha {
-  width : 100vw;
-  height: 100vh;
-  margin: 5vh; 
+  width: 100vw;
+  height: auto; /* Allow height to adjust based on content */
+  margin: 5vh auto; /* Center content with margin auto */
   text-align: center;
   padding: 10px; 
   margin-bottom: 5vh;
+  position: relative; /* Ensure proper stacking context */
+  z-index: 1;
 }
 
 h1 {
-  margin-top : 6vh;
+  margin-top: 8vh;
   color: #3b8618;
   font-size: 2.5rem; 
   font-weight: 700;
@@ -29,6 +31,7 @@ h1 {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
+  z-index: 2; /* Ensure grid items are properly stacked */
 }
 
 .card {
@@ -38,10 +41,12 @@ h1 {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 15px;
   transition: transform 0.2s;
+  position: relative; /* Ensure each card has its own stacking context */
 }
 
 .card:hover {
   transform: scale(1.05);
+  z-index: 3; /* Bring the card to the front on hover */
 }
 
 .card img {
@@ -80,7 +85,7 @@ h1 {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
   .app-alpha {
-    margin: 2vh; 
+    margin: 2vh auto; 
     padding: 5px; 
   }
 
@@ -108,5 +113,23 @@ h1 {
 
   .card button {
     padding: 6px 12px; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .app-alpha {
+    padding: 0; /* Remove padding to fit small screens */
+    margin: 0; /* Remove margin for better alignment */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr; 
+    gap: 5px; 
+    padding: 0; 
+  }
+
+  .card {
+    padding: 10px; 
+    margin-bottom: 10px; /* Add margin to avoid overlap */
   }
 }

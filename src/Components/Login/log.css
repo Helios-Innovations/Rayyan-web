@@ -1,64 +1,65 @@
-/* Reset some default browser styles */
-body, html, * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Center the login container */
-.login-container {
+.lr-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
 }
 
-/* Style the login form */
-.login-form {
-  background: #fff;
+.lr-form-container {
+  background: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
 }
 
-.login-form h2 {
+.lr-form-container h2 {
   margin-bottom: 20px;
-  text-align: center;
+  font-size: 24px;
+}
+
+.lr-input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.lr-input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
   color: #333;
 }
 
-.form-group {
-  margin-bottom: 15px;
+.lr-input-group input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  color: #555;
-}
-
-.form-group input {
+.lr-submit-button {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
-
-.login-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
+  border-radius: 5px;
   border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
   font-size: 16px;
+  cursor: pointer;
 }
 
-.login-button:hover {
-  background-color: #0056b3;
+.lr-submit-button:hover {
+  background-color: #45a049;
+}
+
+.lr-toggle-link {
+  color: #007BFF;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.lr-toggle-link:hover {
+  color: #0056b3;
 }

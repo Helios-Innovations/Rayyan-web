@@ -12,7 +12,7 @@ const SliderHome = () => {
   const prevBtnRef = useRef(null);
 
   const items = [
-    { image: show, title: '', name: '', des: 'Lorem ipsum dolor sit amet consectetur, ' },
+    { image: show, title: '', name: 'Showroom', des: 'Lorem ipsum dolor sit amet consectetur, ' },
     { image: real1, title: '', name: 'Apartment', des: 'Lorem ipsum dolor sit amet consectetur,'},
     { image: rick, title: '', name: 'Rickshaw', des: 'Lorem ipsum dolor sit amet consectetur,'},
     { image: Bike, title: '', name: 'E-Bike', des: 'Lorem ipsum dolor sit amet consectetur, ' } 

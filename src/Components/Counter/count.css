@@ -99,3 +99,21 @@ span.counter-text {
     font-size: 2.5em; 
   }
 }
+
+@media screen and (max-width: 480px) {
+  .counter-wrapper {
+    flex-direction: column; 
+    width: 95vw;
+    gap: 10px;
+    height: auto; 
+  }
+  .counter-container {
+    display: none; /* Hide the counter-container on mobile phones */
+  }
+  i {
+    font-size: 2em; 
+  }
+  span.counter-num {
+    font-size: 2.5em; 
+  }
+}

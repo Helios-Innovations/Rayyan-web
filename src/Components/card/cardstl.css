@@ -25,12 +25,13 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   transition: transform 0.3s ease;
-  margin: 0 10px; /* Add margin between cards */
+  margin: 0 15px; /* Increased margin between cards */
 }
 
 .card:hover {
   transform: translateY(-10px);
 }
+
 
 .icon-frame {
   width: 100px;

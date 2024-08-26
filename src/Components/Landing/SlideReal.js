@@ -1,7 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import scooter1 from '../image/scooter1.jpg';
-import scooter2 from '../image/scooter2.jpg';
-import erickshaw from '../image/erickshaw.jpg'
 import real1 from '../image/Vehicles/real1.jpg'
 import real3 from '../image/Vehicles/real3.jpg'
 import './slide.css';
